@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de la Compra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Gestión de Listas de la Compra</h1>
+    <!-- Aquí lo que he hecho ha sido crear un botón nuevo donde le añado una funcinalidad
+     para agregar listas que quieras -->
+    <button id="crearListaBtn">Crear Nueva Lista</button>
+
+    <!-- Lista para seleccionar la lista activa -->
+    <select id="seleccionarLista">
+        <option value="">Seleccione una lista</option>
+    </select>
+
+    <div id="contenedorLista">
+        <h2 id="tituloLista">Lista de la Compra</h2>
+        <input type="text" id="miInput" placeholder="Nuevo item">
+        <button onclick="agregarItem()">Agregar</button>
+        <ul id="lista"></ul>
+    </div>
+
+    <script src="/dist/public/js/script.js"></script>
+</body>
+
+</html>
